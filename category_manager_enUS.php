@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 				return $path;
 	}
 	if (!($magentoPath = getMagentoPath())) {
-		echo "Erro: Não foi possível encontrar a instalação do Magento";
+		echo "Error: Could not find Magento installation path";
 		die();
 	}
 	require_once implode(DIRECTORY_SEPARATOR, [$magentoPath, "app", "Mage.php"]);
@@ -172,7 +172,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 						<input type="submit" name="submit" value="<?php echo $importa2; ?>">
 						<input type="submit" name="submit" value="<?php echo $importa3; ?>">
 						<input type="submit" class="hinted" name="submit" value="<?php echo $importa4; ?>">
-						<span class="hint">Envie uma tabela .csv com os skus e preços dos produtos (com decimais separados por ponto) para associar, cabeçalho deve ser:<br>sku,price</span>
+						<span class="hint">Send a .csv with skus and prices to be associated, header should be:<br>sku,price or <br>sku,price,promotional_price</span>
 						<input type="submit" name="submit" value="<?php echo $importa5; ?>">
 					</a>
 				</div>
