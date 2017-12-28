@@ -12,7 +12,7 @@ Magento admin is generally slow and difficult to use efficiently, putting catego
 
 Tested with Magento 1.7.x ~ 1.9.x
 
-![Category Manager English Version](https://raw.githubusercontent.com/GuilhermeRossato/magento-tools/master/category_manager_image.png)
+![Category Manager English Version](https://raw.githubusercontent.com/GuilhermeRossato/magento-tools/master/Images/category_manager.png)
 
 #### Instalation
 
